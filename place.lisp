@@ -30,7 +30,6 @@
 
 (def-view-class travelFrom ()
   ((id :type integer
-       :db-kind :key
        :db-constraints :not-null
        :initarg :id)
    (date :type integer
@@ -62,7 +61,6 @@
 
 (def-view-class travelTo ()
   ((id :type integer
-       :db-kind :key
        :db-constraints :not-null
        :initarg :id)
    (date :type date
@@ -90,6 +88,9 @@
 			  :home-key p
 			  :foreign-key id
 			  :set nil))))
+
+(create-view-from-class 'travelFrom)
+(create-view-from-class 'travelTo)
 
 (defun insert-departure (date placeFrom person  &optional placeTo)
   (make-instance-in-db 'travelTo

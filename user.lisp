@@ -6,13 +6,13 @@
     :db-constraints :not-null
     :initarg :name)
    (id
-    :type integer
+    :type string
     :db-constraints :not-null
     :initarg :id)
    (birthday
     :type string
     :db-constraints :not-null
-    :initarg :name)
+    :initarg :birth)
    (alive
     :type integer
     :initarg :alive)))

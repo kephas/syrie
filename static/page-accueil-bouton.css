@@ -1,0 +1,25 @@
+body
+{
+    background-color: black;
+    background-image: url("/static/crop_refugies.jpg");
+    background-position:center center;
+}
+h1
+{
+    font-size: 80px;
+    font-family: Arial;
+    text-align: center;
+    color: red;
+}
+#profil-selector
+{
+	text-align: center;
+	font-size: 25px;
+
+}
+.content
+{
+	height: 500px;
+	margin: auto;
+	width: 40%;
+}
