@@ -10,5 +10,6 @@
   :licence "MIT"
   :depends-on ("cl-who" "hunchentoot" "hu.dwim.stefil" "clsql-sqlite3")
   :components ((:file "package")
+	       (:file "db")
 	       (:file "user"))
   :serial t)
