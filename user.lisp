@@ -20,8 +20,5 @@
 (create-view-from-class 'user)
  
 (defun create-user (name id alive birthday)
-  (update-records-from-instance (make-instance 'user
-					       :name name
-					       :id id
-					       :alive alive
-					       :birthday birthday)))
+  (make-instance-in-db 'user :name name :id id
+		       :alive alive :birthday birthday))
